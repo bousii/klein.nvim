@@ -41,3 +41,5 @@ vim.keymap.set('n', '<leader>o', ':Outline<CR>', { silent = true })
 vim.keymap.set("n", "<leader>.", vim.diagnostic.open_float, {})
 vim.keymap.set('n', '<C-t>', ':tabnew<CR>', { silent = true })
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
+
+vim.opt.scrolloff = 10
