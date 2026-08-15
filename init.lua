@@ -9,5 +9,6 @@ require("plugins.telescope")
 require("plugins.autopairs")
 require("plugins.lsp")
 require("plugins.outline")
+require("plugins.fidget")
 -- Base configuration
 require("options")
