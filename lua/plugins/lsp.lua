@@ -14,6 +14,11 @@ vim.lsp.config["gopls"] = {
 	cmd = { 'gopls' },
 	filetypes = { 'go' },
 }
+vim.lsp.config["rust_analyzer"] = {
+	cmd = { "rust-analyzer" },
+	filetypes = { "rust" },
+	root_markers = { "Cargo.toml" },
+}
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = vim.api.nvim_create_augroup('my.lsp', {}),
 	callback = function(args)
@@ -30,5 +35,6 @@ vim.lsp.enable({
 	"clangd",
 	"pyright",
 	"lua_ls",
-	"gopls"
+	"gopls",
+	"rust_analyzer",
 })
